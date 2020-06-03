@@ -43,8 +43,6 @@ describe('GET /apps endpoint', () => {
           const appAtI = res.body[i];
           const appAtIPlus1 = res.body[i + 1];
           if(appAtIPlus1.App.toLowerCase() < appAtI.App.toLowerCase()) {
-            console.log(appAtI);
-            console.log(appAtIPlus1);
             sorted = false;
             break;
           }
