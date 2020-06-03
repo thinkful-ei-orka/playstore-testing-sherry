@@ -3,7 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const app = express();
 app.use(morgan('combined'));
-app.listen(8080,()=>console.log('Server running on 8080'));
+
 
 let resultList = [...playstore];
 
@@ -31,3 +31,5 @@ app.get('/apps',(req,res)=>{
 
   res.json(resultList);
 });
+
+module.exports = app;
